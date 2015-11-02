@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="jquery-mobile/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-body,td,th {
+body,td,th, h1, h2, h3, {
 	font-family: "Maven Pro Light 300 Regular";
 }
 </style>
@@ -18,68 +18,133 @@ body,td,th {
 
 <body>
 <div data-role="page" id="home">
-<div class="header" data-position="fixed" data-role="header"><a href="#home"><img src="assets/images/images/home_btn.png" width="40" height="32" alt=""/></a>
-    <h1><img src="assets/images/logo.png" width="200" height="35" alt=""/></h1>
-    <div class="blackLine"></div>
-  </div>
-  
-  <ul data-role="listview">
-<li><a href="#calendar">
-		<img src="assets/images/calendar_btn.png">
-    <h2>View the calendar.</h2>
-</a>
-    </li>
-<li><a href="#plan">
-		<img src="assets/images/myPlan_btn.png">
-    <h2>Make your workout and meal plan.</h2></a>
-    </li>
-<li><a href="#workouts">
-		<img src="assets/images/newWorkouts_btn.png">
-    <h2>See a premade workout routine.</h2></a>
-    </li>
-<li><a href="#community">
-		<img src="assets/images/community_btn.png">
-    <h2>Take a look at the FU community.</h2></a>
-    </li><li><a href="#profile">
-  <img src="assets/images/profile_btn.png">
-    <h2>Enter in your profile information.</h2></a>
-    </li>
-    </ul>
-<div class="footer" data-position="fixed" data-role="footer">
- <h4> </h4></div>
- <div class="blueLine"></div>
+	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
 </div>
 
+<div class="content" style="padding-left: 20px; padding-right:20px; padding-top: 20px; padding-bottom: 20px">
+	<ul data-role="listview">
+		<li><a href="#calendar">
+			<img src="assets/images/calendar_btn.png" style="padding-left: 10px; padding-top: 10px">
+   				 <h2>View the calendar.</h2>
+			</a>
+    	</li>
+		<li><a href="#plan">
+			<img src="assets/images/myPlan_btn.png" style="padding-left: 10px; padding-top: 10px">
+    			<h2>Make your workout and meal plan.</h2>
+			</a>
+   		 </li>
+		<li><a href="#workouts">
+			<img src="assets/images/newWorkouts_btn.png" style="padding-left: 10px; padding-top: 10px">
+    			<h2>See a premade workout routine.</h2>
+			</a>
+   	    </li>
+		<li><a href="#community">
+			<img src="assets/images/community_btn.png" style="padding-left: 10px; padding-top: 10px">
+   			   <h2>Take a look at the FU community.</h2>
+			</a>
+   		</li>
+		<li><a href="#profile">
+  			<img src="assets/images/profile_btn.png" style="padding-left: 10px; padding-top: 10px">
+    			<h2>Enter in your profile information.</h2>
+			</a>
+    	</li>
+    </ul>
+</div>
+	<div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
+</div>
+
+
 <div data-role="page" id="calendar">
-  <div data-role="header" data-position="fixed"><a href="index.html" data-role="button" data-icon="back">Button</a>
-    <h1>Fitness Unlimited</h1>
-  </div>
+	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
+</div>
   <div data-role="content">Content</div>
-  <div data-role="footer" data-position="fixed">
-    <h4>Footer</h4>
+  <div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
   </div>
 </div>
 
 <div data-role="page" id="plan">
-  <div data-role="header" data-position="fixed"><a href="index.html" data-role="button" data-icon="back">Button</a>
-    <h1>Fitness Unlimited</h1>
+	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
+</div>
+  <div data-role="content"><h2>My Workout Plan</h2></div>
+  
+<div data-role="fieldcontain" >
+    <label for="date" style="padding-left: 15px;">Find Day:</label>
+    <input name="date" type="date" id="date" autocomplete="off" value="year-month-day"  />
+   <div data-role="fieldcontain">
+    
+  </div></div>
+<div data-role="fieldcontain">
+  <label for="textarea7" style="padding-left: 15px;">Routine:</label>
+  <textarea cols="40" rows="8" name="textarea7" id="textarea7" ></textarea>
+</div>
+  
+  <div data-role="content"><h2>My Meal Plan</h2>
+  <p>Breakfast</p>
+   <label for="textinput"></label>
+    <input type="text" name="textinput" id="textinput" value=""  />
+    <p>Snack</p>
+    <label for="textinput"></label>
+    <input type="text" name="textinput" id="textinput" value=""  />
+    <p>Lunch</p>
+     <label for="textinput"></label>
+    <input type="text" name="textinput" id="textinput" value=""  />
+    <p>Snack</p>
+     <label for="textinput"></label>
+    <input type="text" name="textinput" id="textinput" value=""  />
+    <p>Dinner</p>
+     <label for="textinput"></label>
+    <input type="text" name="textinput" id="textinput" value=""  />
   </div>
-  <div data-role="content">Content</div>
-  <div data-role="footer" data-position="fixed">
-    <h4>Footer</h4>
+  <div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
   </div>
 </div>
 
 <div data-role="page" id="workouts">
-  <div data-role="header" data-position="fixed"><a href="index.html" data-role="button" data-icon="back">Button</a>
-  
-    <h1>Fitness Unlimited</h1>
-  </div>
+ 	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
+</div>
   <div data-role="content"><h2>New Workouts</h2></div>
   <div data-role="collapsible-set">
     <div data-role="collapsible" data-collapsed="true">
-      <h3>Back</h3>
-      <p>one arm fly</p>
+      <h3>Back- increase weight each set</h3>
+      <p>1. Barbell Row- 4 sets <br>
+        2. One Arm Row- 4 sets each arm<br>
+        3. 
+      </p>
     </div>
     <div data-role="collapsible" data-collapsed="true">
       <h3>Legs</h3>
@@ -110,29 +175,73 @@ body,td,th {
       <p>Content</p>
     </div>
   </div>
-  
-  <div data-role="footer" data-position="fixed">
-    <h4>Footer</h4>
+  <div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
   </div>
 </div>
 
 <div data-role="page" id="community">
-  <div data-role="header" data-position="fixed"><a href="index.html" data-role="button" data-icon="back">Button</a>
-    <h1>Fitness Unlimited</h1>
-  </div>
+	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
+</div>
   <div data-role="content">Content</div>
-  <div data-role="footer" data-position="fixed">
-    <h4>Footer</h4>
+ <div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
   </div>
 </div>
 
 <div data-role="page" id="profile">
-  <div data-role="header" data-position="fixed"><a href="index.html" data-role="button" data-icon="back">Button</a>
-    <h1>Fitness Unlimited</h1>
+ 	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+    <div>
+    	<a href="#home">
+    		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
+        </a>
+    </div>
+    <div style= "padding-top: 7px; text-align: center">
+    	<img src="assets/images/logo.png" width="300" height="53" alt="" />
+    </div>
+</div>
+  <div data-role="content"> 
+  <h1>Profile</h1>
+    <div data-role="fieldcontain">
+      <label for="textarea">Name:</label>
+      <textarea name="textarea" cols="60" rows="1" wrap="hard" id="textarea"></textarea>
+      <div data-role="fieldcontain">
+        <label for="textarea2">Gender:</label>
+        <textarea cols="20" rows="1" name="textarea2" id="textarea2"></textarea>
+        <div data-role="fieldcontain">
+          <label for="textarea3">Height:</label>
+          <textarea cols="40" rows="1" name="textarea3" id="textarea3"></textarea>
+          <div data-role="fieldcontain">
+            <label for="textarea4">Weight</label>
+            <textarea cols="40" rows="1" name="textarea4" id="textarea4"></textarea>
+            <div data-role="fieldcontain">
+              <label for="textarea5">Goal Weight:</label>
+              <textarea cols="40" rows="1" name="textarea5" id="textarea5"></textarea>
+              <div data-role="fieldcontain">
+                <label for="textarea6">Incentive Goal:</label>
+                <textarea cols="40" rows="1" name="textarea6" id="textarea6"></textarea>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
   </div>
-  <div data-role="content">Content</div>
-  <div data-role="footer" data-position="fixed">
-    <h4>Footer</h4>
+<div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
+	</div>
   </div>
 </div>
 
