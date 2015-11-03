@@ -2,11 +2,12 @@
 /* CSS Document */
 
 
-body {
-	font: "Maven Pro Light 300 Regular";
+body, p, h1, h2, h3 {
+	font-family: "Maven Pro Light 300 Regular";
 	margin: 0;
 	padding: 0;
 }
+
 
 #home, #calendar, #plan, #workouts, #community, #profile {
 	background: #d7d7d7 repeat;
@@ -56,6 +57,10 @@ height: 100px;
 	position: absolute;
 	left: 0;
 	bottom: 0;
+}
+
+p {
+	color: #19a4fc;
 }
 
 .blueLine {
