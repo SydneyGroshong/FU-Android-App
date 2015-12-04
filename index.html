@@ -32,37 +32,37 @@ $(document).bind('mobileinit',function(){
 
 <body>
 <div data-role="page" id="home">
-	<div class="header" style="border-bottom: solid black 4px; " data-position="fixed" data-role="header">
+	<div class="header" style="border-bottom: solid black 4px; padding-top:10px; padding-left:10px; " data-position="fixed" data-role="header">
     <div>
     	<a href="#home">
     		<img src="assets/images/home_btn.png" width="40" height="32" alt=""/>
         </a>
     </div>
-    <div style= "padding-top: 7px; text-align: center">
+    <div style= "padding-top: 7px; padding-bottom: 2px; text-align: center">
     	<img src="assets/images/logo.png" width="300" height="53" alt="" />
     </div>
 </div>
 
-<div class="content" style="padding-left: 20px; padding-right:20px; padding-top: 20px; padding-bottom: 20px">
+<div class="content" style="padding-left: 20px; padding-right:20px; padding-top: 20px; padding-bottom: 20px" >
 	<ul data-role="listview">
 		
-		<li><a href="#plan">
-			<img src="assets/images/myPlan_btn.png" style="padding-left: 10px; padding-top: 10px">
+		<li data-role=" "><a href="#plan">
+			<img src="assets/images/images/myplan.png" style="padding-left: 10px; padding-top: 10px">
     			<h2>Make your workout and meal plan.</h2>
 			</a>
    		 </li>
 		<li><a href="#workouts">
-			<img src="assets/images/newWorkouts_btn.png" style="padding-left: 10px; padding-top: 10px">
+			<img src="assets/images/images/newworkouts.png" style="padding-left: 10px; padding-top: 10px">
     			<h2>See a premade workout routine.</h2>
 			</a>
    	    </li>
 		<li><a href="#community">
-			<img src="assets/images/community_btn.png" style="padding-left: 10px; padding-top: 10px">
+			<img src="assets/images/images/community.png" style="padding-left: 10px; padding-top: 10px">
    			   <h2>Upload a photo and share it.</h2>
 			</a>
    		</li>
 		<li><a href="#profile">
-  			<img src="assets/images/profile_btn.png" style="padding-left: 10px; padding-top: 10px">
+  			<img src="assets/images/images/profile.png" style="padding-left: 10px; padding-top: 10px">
     			<h2>Enter in your profile information.</h2>
 			</a>
     	</li>
@@ -75,7 +75,7 @@ $(document).bind('mobileinit',function(){
   <div data-role="content">Content</div>
   <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">Anchor</a>
   <a href="#" class= "ui-btn ui-icon-delete ui-btn-icon-left">Left</a>
-  <button class="ui-btn ui-corner-all">Button</button>
+  
   <div class="footer" style="border-top: solid #19a4fc 4px; " data-position="fixed" data-role="footer">
 	</div>
   </div>
@@ -268,37 +268,8 @@ $(document).bind('mobileinit',function(){
     	<img src="assets/images/logo.png" width="300" height="53" alt="" />
     </div>
 </div>
- 
-      <!-- I got these buttons from simplesharebuttons.com -->
-<div id="share-buttons" style="padding-left:20px; padding-top:10px;">
-    
-   
-   
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-    </a>
-    
-    
-   
-    <!-- Pinterest -->
-    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-    </a>
-    
-   
-    
-    <!-- Tumblr-->
-    <a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-    </a>
-     
-    <!-- Twitter -->
-    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-    </a>
-</div>
-      <div>   <div class="container" style="padding-left: 20px; padding-right: 20px;">
+<div>   
+	<div class="container" style="padding-left: 150px; padding-right: 150px; data-position="fixed">
 
             <section class="main-content">
                 
@@ -306,15 +277,20 @@ $(document).bind('mobileinit',function(){
                     <input type="file" id="take-picture" accept="image/*">
                 </p>
 
-                <p>
-                    <img src="about:blank" alt="" id="show-picture">
-                </p>
-
-                <p id="error"></p>
-
             </section>
 
         </div>
+
+      <!-- I got these buttons from simplesharebuttons.com -->
+<div id="share-buttons" style="padding-top:10px;" role="group" >
+ 
+   <!-- Facebook -->
+   <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank"" data-role="button" data-icon="plus"><img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" width = "100" /></a>
+   
+    <!-- Pinterest --><a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());" data-role="button" data-icon="plus"> <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" width = "100" /></a> 
+
+    <!-- Twitter --><!-- Tumblr -->
+    <div data-role="controlgroup" data-type="horizontal"><a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" data-role="button" data-icon="plus"> <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" width = "100" /></a><a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank" data-role="button" data-icon="plus"><img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" width = "100"/></a></div>
 
 
         <script src="js/base.js"></script>
